@@ -1,0 +1,179 @@
+body {color: black; background: #254888; margin: 0; padding: 0; font-size:11px;}
+
+table td {padding:0; border-width:0; vertical-align:top; font-size:12px;}
+
+a        {color:#000000; text-decoration:none;}
+a:hover  {color:#F7681F; text-decoration:underline;}
+
+ul       {margin:2px; padding:2px; list-style:decimal inside; text-align:left;}
+li       {margin-left:2px; list-style:square inside; color:#666666}
+
+th       {background-color:#778EC2; color:#FFFFFF; padding:3px; vertical-align:middle; font-family:Verdana, Arial, Helvetica, sans-serif;}
+abbr, acronym, .help {border-bottom:1px dashed black;cursor:help;}
+
+td#headerlogo {width: 160px; background-color: #254888; vertical-align: top; text-align:left; padding: 0px 0px 0px 0px;}
+td#headerbanner {background-color: #254888; vertical-align: top; text-align:center;}
+td#search {background-image: url(tabc.gif); text-align:left; vertical-align:bottom;}
+td#headerbar {background-color: #4766A6; color: #FFFFFF;font-size: 12px; padding: 1px 10px 3px 1px; text-align: left;}
+td#headerbar a{color: #FFFFFF; text-decoration:none;}
+td#headerbar a:hover{color: #FFFFEE; text-decoration:underline;}
+
+#leftcolumn  {width:160px; font-size:11px; background:#FFFFCD;}
+#rightcolumn {width:160px; font-size:11px; background:#4766A6;}
+#centercolumn {background-color:#FFFFFF; color:#000000; padding :5px; font-size:11px}
+div#content  {text-align: left; font-size: 11px;color:#000000;}
+
+td#mainmenu a {display: block; margin: 0; padding: 1px;}
+td#mainmenu a:hover {}
+td#mainmenu a.menuTop {padding-left: 0px;}
+td#mainmenu a.menuMain {padding-left: 0px;}
+td#mainmenu a.menuSub {padding-left: 10px;}
+
+td#usermenu a {display: block; margin: 0; padding: 1px;}
+td#usermenu a:hover {}
+td#usermenu a.menuTop {padding-left: 0px;}
+td#usermenu a.highlight {padding-left: 5px;}
+
+td#centerCcolumn {padding: 3px 3px 1px 3px;font-size:11px}
+td#centerCcolumn div.blockTitle {padding: 3px; color: #66669A; font-weight: bold; border-top:1px solid #66669A; background-color:#F1F0FF;font-size:12px}
+td#centerCcolumn div.blockContent {padding: 3px;line-height:120%; color:#000000;font-size:11px}
+
+td#centerLcolumn {width: 50%; padding: 0px 3px 0px 3px;}
+td#centerLcolumn div.blockTitle {padding: 3px; color: #DF572D; font-weight: bold; border-top:1px solid #CCCCCC; border-left:1px solid #CCCCCC; background-color:#FFF0E1; font-size:12px;}
+td#centerLcolumn div.blockContent {padding: 3px; line-height: 120%; border-left:1px solid #CCCCCC; font-size:12px;}
+
+td#centerRcolumn {width: 50%; padding: 0px 3px 0px 3px;}
+td#centerRcolumn div.blockTitle {padding: 3px; color: #3F8640; font-weight: bold; border-top:1px solid #CCCCCC; border-left:1px solid #CCCCCC; background-color:#E4F7E4; font-size:12px;}
+td#centerRcolumn div.blockContent {padding: 3px; line-height: 120%; border-left:1px solid #CCCCCC; font-size:12px;}
+
+div.spacer         {clear: both;}
+div.row span.left  {float: left; text-align: left; font-weight: bold; color: #fff; margin-left:33px; width: 50%;}
+div.row span.right {float: right; text-align: right; font-weight: bold;	padding-right:20px; color: #fff; width: 30%;}
+
+/* LeftBar Title Blocks */
+.leftTitle1, .leftTitle2, .leftTitle3, .leftTitle4
+		{font-family: trebuchet ms, trebuchet, arial, lucilda; font-weight:bold; vertical-align:middle;padding:3px 2px 1px 5px;}
+
+.leftTitle1 {color: #FFFFFF; background: #4B82BA; border-bottom: 1px solid #FFFFFF; font-size:11px;}
+.leftTitle2 {color: #000000; background: #D1E4FF; font-size:11px;}
+.leftTitle3 {color: #000000; background: #CCCC99; font-size:11px;}
+.leftTitle4 {color: #000000; background: #CCCC99; font-size:11px;}
+
+
+/* LeftBar Content Blocks */
+.leftContent1, .leftContent2, .leftContent3, .leftContent4
+{font-family: trebuchet ms, trebuchet, arial, lucilda; padding-left: 5px; padding-bottom:5px;}
+
+.leftContent1           {color:#FFFFFF; background:#4B82BA; font-size: 10px;}
+.leftContent1 a:link    {color:#FFFFFF; text-decoration:none; font-size: 10px;}
+.leftContent1 a:hover   {color:#FFFFEE; text-decoration:underline; font-size: 10px;}
+.leftContent1 a:visited {color:#FEFEFE; font-size: 10px;}
+
+.leftContent2 {color:#000000; background:#EEF8FD; font-size: 10px;}
+.leftContent2 a:link    {color:#000000; text-decoration:none; font-size: 10px;}
+.leftContent2 a:hover   {color:#F7681F; text-decoration:underline; font-size: 10px;}
+.leftContent2 a:visited {color:#111111; font-size: 10px;}
+
+.leftContent3 {color:#000000; background:#FFFFCD; font-size: 10px;}
+.leftContent3 a:link    {color:#000000; text-decoration:none; font-size: 10px;}
+.leftContent3 a:hover   {color:#F7681F; text-decoration:underline; font-size: 10px;}
+.leftContent3 a:visited {color:#111111; font-size: 10px;}
+
+.leftContent4 {color:#000000; background:#FFFFCD; font-size: 10px;}
+.leftContent4 a:link    {color:#000000; text-decoration:none; font-size: 10px;}
+.leftContent4 a:hover   {color:#F7681F; text-decoration:underline; font-size: 10px;}
+.leftContent4 a:visited {color:#111111; font-size: 10px;}
+
+/* Rightbar Title Blocks */
+.rightTitle1, .rightTitle2, .rightTitle3
+		{font-family: trebuchet ms, trebuchet, arial, lucilda;font-weight:bold; vertical-align:middle;padding:3px 2px 1px 5px;}
+		
+.rightTitle1 {color: #FFFFFF; background:#778EC2; font-size:11px;}
+.rightTitle2 {color: #FFFFFF; background:#778EC2; font-size:11px;}
+.rightTitle3 {color: #FFFFFF; background:#778EC2; font-size:11px;}
+
+
+/* Rightbar Content Blocks */
+.rightContent1, .rightContent2, .rightContent3 
+{font-family:arial, helvetica, sans-serif; padding:5px 10px; line-height:140%;}
+				
+.rightContent1 {color:#FFFFFF; background:tranparent; font-size:10px;}
+.rightContent1 a:link    {color:#FFFFFF; text-decoration:none; font-size:10px;}
+.rightContent1 a:visited {color:#FFFFFF; text-decoration:none; font-size:10px;}
+.rightContent1 a:hover   {color:#FFFFEE; text-decoration:underline; font-size:10px;}
+
+.rightContent2 {color:#FFFFFF; background:tranparent; font-size:10px;}
+.rightContent2 a:link    {color:#FFFFFF; text-decoration:none; font-size:10px;}
+.rightContent2 a:visited {color:#FFFFFF; text-decoration:none; font-size:10px;}
+.rightContent2 a:hover   {color:#FFFFEE; text-decoration:underline; font-size:10px;}
+
+.rightContent3 {color:#FFFFFF; background:tranparent; font-size:10px;}
+.rightContent3 a:link    {color:#FFFFFF; text-decoration:none; font-size:10px;}
+.rightContent3 a:visited {color:#FFFFFF; text-decoration:none; font-size:10px;}
+.rightContent3 a:hover   {color:#FFFFEE; text-decoration:underline; font-size:10px;}
+
+
+.item          {border: 1px solid #cccccc;font-size:1em;}
+.itemHead      {padding: 3px; background-color: #778EC2; color: #FFFFFF;}
+.itemInfo      {text-align: right; padding: 3px; background-color: #efefef}
+.itemTitle a   {font-size: 120%; font-weight: bold; color: #ffffff; background-color: transparent;}
+.itemPoster    {font-size: 90%;}
+.itemPostDate  {font-size: 90%;}
+.itemStats     {font-size: 90%;}
+.itemBody      {padding-left: 10px;}
+.itemText      {margin-top: 5px; margin-bottom: 5px; line-height: 1.3em;}
+.itemText:first-letter {font-size: 133%; font-weight: bold;}
+.itemFoot      {text-align: right; padding: 3px; background-color: #efefef}
+.itemAdminLink {font-size: 90%;}
+.itemPermaLink {font-size: 90%;}
+
+.comTitle {font-weight: bold; margin-bottom: 2px;}
+.comText {padding: 2px;}
+.comUserStat {font-size: 10px; color: #0083D7; font-weight:bold; border: 1px solid silver; background-color: #ffffff; margin: 2px; padding: 2px;}
+.comUserStatCaption {font-weight: normal;}
+.comUserStatus {margin-left: 2px; margin-top: 10px; color: #0083D7; font-weight:bold; font-size: 10px;}
+.comUserRank {margin: 2px;}
+.comUserRankText {font-size: 10px;font-weight:bold;}
+.comUserRankImg {border: 0;}
+.comUserName {}
+.comUserImg {margin: 2px;}
+.comDate {font-weight: normal; font-style: italic; font-size: smaller}
+.comDateCaption {font-weight: bold; font-style: normal;}
+
+.outer     {border:1px solid silver;}
+.head      {background-color:#D1E4FF; color:#222222; padding:5px; font-weight:bold;}
+.even      {background-color:#FEFEFE; padding:5px;}
+.odd       {background-color:#EEF8FD; padding:5px;}
+.foot      {background-color:#c2cdd6; padding:5px; font-weight:bold;}
+tr.even td {background-color:#FEFEFE; padding:5px;}
+tr.odd td  {background-color:#EEF8FD; padding:5px;}
+
+.head td  {background-color:#D1E4FF; color:#222; padding:5px; font-weight:bold;}
+.head a:link  {color:#333;text-decoration:none;}
+.head a:hover {color:#333;text-decoration:underline;}
+
+.navtext {font-size:12px; vertical-align: bottom;}
+.navinput {width: 32em; height: 14px; font-size: 90%; border:1px solid #999999; background-color: #FFFFFF; padding:0px; vertical-align: bottom;}
+.navinputImage {vertical-align: bottom;}
+
+td#footbar1 {background:#4766A6;text-align:left;font-size:12px; padding: 5px;}
+td#footbar1 a{color:#FFFF9C; text-decoration:none;}
+td#footbar1 a:hover{color:#FFFF9C; text-decoration:underline;}
+
+td#footbar2 {background:#4766A6;text-align:left;font-size:13px; padding: 5px; color:#FFFFFF;}
+td#footbar2 a{color:#FFFFFF; text-decoration:none;}
+td#footbar2 a:hover{color:#FFFFEE; text-decoration:underline;}
+
+div.errorMsg {background-color:#FFCCCC; text-align:center; border-top:1px solid #DDDDFF; border-left:1px solid #DDDDFF; 
+		border-right:1px solid #AAAAAA; border-bottom:1px solid #AAAAAA; font-weight:bold; padding:10px;}
+div.confirmMsg {background-color:#DDFFDF; color:#136C99; text-align:center; border-top:1px solid #DDDDFF; 
+		border-left:1px solid #DDDDFF; border-right:1px solid #AAAAAA; border-bottom:1px solid #AAAAAA; font-weight:bold; padding:10px;}
+div.resultMsg {background-color:#CCCCCC; color:#333333; text-align:center; border-top:1px solid silver; border-left:1px solid silver; 
+		font-weight:bold; border-right:1px solid #666666; border-bottom:1px solid #666666; padding:10px;}
+
+div.xoopsCode  {background:#FFFFFF; border:1px inset #000080; font-family:"Courier New",Courier,monospace; padding:0px 6px 6px 6px;}
+div.xoopsQuote {background:#FFFFFF; border:1px inset #000080; font-family:"Courier New",Courier,monospace; padding:0px 6px 6px 6px;}
+
+table    {margin:0; padding:0; voice-family: "\"}\""; /* some browsers have a parsing bug */
+                         /* and will ignore the following rules */
+  voice-family: inherit;width:100%;}

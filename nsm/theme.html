@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<Script Language="JavaScript">
+<!--
+function time01() {
+var dayTim,jiTim,funTim,byoTim;
+dayTim=new Date();
+jiTim=dayTim.getHours();
+funTim=dayTim.getMinutes();
+byoTim=dayTim.getSeconds();
+document.time01.timeform.value=jiTim+"h "+funTim+"mn "+byoTim+"sec.";
+setTimeout("time01()",1000);
+}
+// End -->
+
+</Script>
+<script language="JavaScript">
+	my_url="<{$xoops_url}>";
+	my_name="<{$xoops_sitename}>";
+	function book_mark()
+		{if(document.all)window.external.addFavorite(my_url,my_name);}
+//-->
+</script>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+
+<body>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+  <td id="headerlogo" height=63><a href="<{$xoops_url}>/"><img src="<{$xoops_imageurl}>logo1.gif"></a></td>
+  <td id="headerbanner"><{$xoops_banner}></td>
+  <td align=right><FORM NAME="time01"><INPUT TYPE="text" size="22" NAME="timeform" style="border-style:solid;border-width:1px;border-color:#FFFFFF;color:#FFFFFF;background:transparent;">&nbsp;</FORM><Script Language="JavaScript">
+<!-- 
+time01();
+//-->
+</Script>&nbsp;</td>
+</tr>
+
+<tr>
+<td id="headerlogo" height=42><a href="<{$xoops_url}>/"><img src="<{$xoops_imageurl}>logo2.gif"></a></td>
+<td id="search" height=42>
+<form action="<{$xoops_url}>/search.php" method="post">
+<font style="font-size:12px;color:#FFFFFF;">&nbsp;<b>Recherche</b>&nbsp;</font><input type="text" name="query" class="navinput" /><input type="hidden" name="action" value="results" />&nbsp;<input class="navinputImage" type="image" src="<{$xoops_imageurl}>searchButton.gif" name="searchSubmit" /></form></td>
+
+<td height=42 style="background-image: url(<{$xoops_imageurl}>tabc.gif); text-align:center; vertical-align:middle"><font style="font-size:12px;color:#FFFF9C;"><b>Xoops2 RC3</b></font></td>
+</tr>
+</table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td id="headerbar">
+&nbsp;&nbsp;<a href="<{$xoops_url}>/"><b>Accueil</b>&nbsp;</a>
+|<a href="<{$xoops_url}>/modules/news/">&nbsp;&nbsp;<b>Articles</b>&nbsp;</a>
+|<a href="<{$xoops_url}>/modules/newbb/">&nbsp;&nbsp;<b>Forums</b>&nbsp;</a>
+|<a href="<{$xoops_url}>/modules/mydownloads/">&nbsp;&nbsp;<b>Téléchargements</b>&nbsp;</a>
+|<a href="<{$xoops_url}>/modules/mylinks">&nbsp;&nbsp;<b>Liens Web</b>&nbsp;</a>
+|<a href="<{$xoops_url}>/modules/xoopsfaq">&nbsp;&nbsp;<b>F.A.Q.</b>&nbsp;</a>
+</td>
+</tr>
+</table>
+
+<table id="body" cellspacing="0" width="100%">
+<tr>
+
+	<td id="leftcolumn" width="160">
+		<!-- Start left blocks loop -->
+        <{foreach item=block from=$xoops_lblocks}>
+          <{include file="nsm/theme_blockleft.html"}>
+        <{/foreach}>
+        <!-- End left blocks loop -->
+	</td>
+
+	<td id="centercolumn">
+        <!-- Display center blocks if any -->
+        <{if $xoops_showcblock == 1}>
+        <table cellspacing="0" width="100%">
+          <tr>
+
+            <td id="centerLcolumn">
+
+            <!-- Start center-left blocks loop -->
+              <{foreach item=block from=$xoops_clblocks}>
+                <{include file="nsm/theme_blockcenter_l.html"}>
+              <{/foreach}>
+            <!-- End center-left blocks loop -->
+
+            </td><td id="centerRcolumn">
+
+            <!-- Start center-right blocks loop -->
+              <{foreach item=block from=$xoops_crblocks}>
+                <{include file="nsm/theme_blockcenter_r.html"}>
+              <{/foreach}>
+            <!-- End center-right blocks loop -->
+
+            </td>
+          </tr>
+
+          <tr>
+            <td id="centerCcolumn" colspan="2">
+
+            <!-- Start center-center blocks loop -->
+            <{foreach item=block from=$xoops_ccblocks}>
+              <{include file="nsm/theme_blockcenter_c.html"}>
+            <{/foreach}>
+            <!-- End center-center blocks loop -->
+
+            </td>
+          </tr>
+
+        </table>
+        </div>
+        <{/if}>
+        <!-- End display center blocks -->
+		<div id="content"><{$xoops_contents}></div>
+	</td>
+	
+<{if $xoops_showrblock == 1}>
+	<td id="rightcolumn" width="160">
+	<!-- Start right blocks loop -->
+	<{foreach item=block from=$xoops_rblocks}>
+		<{include file="nsm/theme_blockright.html"}>
+	<{/foreach}>
+	<!-- End right blocks loop -->
+	</td>
+<{/if}>
+</tr>
+</table>
+
+<table border=0 cellspacing=0 cellpadding=0 width=100%>
+<tr><td id="footbar1">
+&nbsp;&nbsp;<a href="JavaScript:book_mark();"><b>Ajouter aux favoris</b></a>
+</td></tr>
+<tr><td id="footbar2">
+&nbsp;&nbsp;<a href="<{$xoops_url}>/"><b>Accueil</b>&nbsp;</a>
+|<a href="<{$xoops_url}>/modules/news/">&nbsp;&nbsp;<b>Articles</b>&nbsp;</a>
+|<a href="<{$xoops_url}>/modules/newbb/">&nbsp;&nbsp;<b>Forums</b>&nbsp;</a>
+|<a href="<{$xoops_url}>/modules/mydownloads/">&nbsp;&nbsp;<b>Téléchargements</b>&nbsp;</a>
+|<a href="<{$xoops_url}>/modules/mylinks">&nbsp;&nbsp;<b>Liens Web</b>&nbsp;</a>
+|<a href="<{$xoops_url}>/modules/xoopsfaq">&nbsp;&nbsp;<b>F.A.Q.</b>&nbsp;</a>
+</td></tr>
+</table>
+
+<table border=0 cellspacing=0 cellpadding=0 width=100%>
+<tr><td bgcolor=#254888><font color=#FFFFFF size=1 style="font-size:10px; line-height:140%; padding: 5px;">
+&nbsp;&nbsp;(C) 2003 OCEAN-NET Corporation. All rights reserved
+</td></tr>
+</table>
+
+</body>
+</html>
